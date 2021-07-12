@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+    
+<style>
+
+ h1{font-family: sans-serif;
+  text-align: center;} 
+
+
+pre, .Registration{font-family: sans-serif;}
+    
+.imprint{text-align: right;}
+    
+hr{border-width: medium;} 
+    
+#plm{font-family: sans-serif;
+    text-align: center}
+
+#usr,#pwd,#email{font-family: sans-serif;}
+    
+.col-sm-7 {padding-bottom: 20px;}  
+    
+.form-control {border-width: medium;}
+    
+a{color: black;}
+     
+</style>
+    
+</head>
+
+<body>
+<div class="container">
+  <h1>My customized login form</h1>
+<hr >
+
+
+  <div class="container">     
+    <div class="row">
+      <div  class="col-sm-8 register-left ">
+        <p>In order to log in to my page, complete the form on the right. Enter your username and <br>
+            password and press the button <q>Login</q> to complete the login. If you do not have an account,<br>
+          yet, enter your e-mail address and press the button <q>Register</q>.
+
+      </div>
+
+
+      <div class="col-sm-4 register-right">
+          <div class="container">
+              
+  <form action="/action_page.php">
+      <div class="row">          
+    <div class="col-sm-3">
+        <h6><label for="usr">Username:</label></h6>
+          </div>
+          <div class="col-sm-7">
+      <input type="text" class="form-control" id="usr" name="username">
+    </div>
+             
+    <div class="col-sm-3">
+        <h6><label for="pwd">Password:</label></h6>
+          </div>
+          <div class="col-sm-7">
+       <input type="password" class="form-control" id="pwd" name="password">
+    </div>
+          
+          
+           <div class="col-sm-3">
+               <p></p>
+          </div>
+    <div class="col-sm-7 ">
+    <button type="submit" class="btn btn-outline-secondary btn-sm">Login</button>
+      </div>
+          
+   </div>
+
+         
+   <hr>
+
+
+ <div class="row">
+<div class="col-sm-3">
+   <h6><label for="email">E-Mail:</label></h6>
+    </div>
+    <div class="col-sm-7">
+   <input type="text" class="form-control" id="email" name="email">
+    </div>
+      <div class="col-sm-3">
+               <p></p>
+          </div>
+    <div class="col-sm-3">
+   <button type="submit" class="btn btn-outline-secondary btn-sm">Register</button>
+ </div>  
+               
+      </div>  
+ 
+              </form>     
+    </div>
+  </div>
+      </div>
+    </div>
+    
+<hr>
+      
+
+ <div class="container">     
+    <div class="row">
+    <div class="col-sm-2">
+	<a href="http://example.com/" target="_blank">Home</a>
+    </div>  
+    <div class="col-sm-8">
+        <p id="plm">Page last modified: Fr 6. Apr 11:52:18 CEST 2018</p>
+    </div> 
+    <div class="col-sm-2">
+        <a href="http://example.com/" target="_blank">Imprint</a>
+    </div>
+    </div>
+ </div>
+    </div>
+   
+    
+     
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+{% extends "university/base.html" %}
+
+{% block headline %}Exams Details{% endblock %}
+
+{% block main %}
+<table class = "table table-striped">
+  <thead>
+  <tr>
+    <th>Topic</th>
+    <th>Docent</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for Exam in exams %}
+  <tr>
+      <td>{{Exam.topic}}</td>
+      <td>{{Exam.docent}}</td>
+
+  </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

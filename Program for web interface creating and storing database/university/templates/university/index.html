@@ -1,0 +1,36 @@
+{% extends "university/base.html" %}
+
+
+{% block main %}
+
+<p>Professor Count: {{professors.count}}</p>
+<p>Student Count: {{students.count}}</p>
+<p>Exams Count: {{exams.count}}</p>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Professors</th>
+        <th>Students</th>
+        <th>Exams</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        {% for Professor in professors %}
+        <td>{{Professor.name}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        {% for Student in students %}
+        <td>{{Student.name}}</td>
+        {% endfor %}
+    </tr>
+    <tr>
+        {% for Exam in exams %}
+        <td>{{Exam.topic}}</td>
+        {% endfor %}
+    </tr>
+    </tbody>
+</table>
+{% endblock %}
